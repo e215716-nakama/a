@@ -1,17 +1,14 @@
 package jp.ac.uryukyu.ie.e215716;
 import java.util.*;
-public class Kotu implements Mentu {
-    private Map<String, Integer> hai;
-    private int count =0;
-    private int count2 =0;
-    private int countKotu = 0;
+public class Kotu extends Mentu {
+    private int count;
+    private int count2;
+    private int countKotu;
 
-    public Map<String, Integer> getHai() {
-        return hai;
-    }
-
-    public Kotu(){
-        hai = new HashMap<>();
+    public Kotu(int count,int count2,int countMentu){
+        this.count =0;
+        this.count2 = 0;
+        this.countKotu = 0;
     }
 
     @Override

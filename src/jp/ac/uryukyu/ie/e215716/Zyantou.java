@@ -1,18 +1,15 @@
 package jp.ac.uryukyu.ie.e215716;
 
 import java.util.*;
-public class Zyantou implements Mentu {
-    private Map<String, Integer> hai;
-    private int count =0;
-    private int count2 =0;
-    private int countZyantou = 0;
+public class Zyantou extends Mentu {   
+    private int count;
+    private int count2;
+    private int countZyantou;
 
-    public Map<String, Integer> getHai() {
-        return hai;
-    }
-
-    public Zyantou(){
-        hai = new HashMap<>();
+    public Zyantou(int count,int count2,int countZyantou){
+        this.count =0;
+        this.count2 = 0;
+        this.countZyantou = 0;
     }
 
     @Override
@@ -26,8 +23,7 @@ public class Zyantou implements Mentu {
             for(int k=0;k<list.size();k++){
                 if(j==list.get(k)){
                     count +=1;
-                    if(count==2){
-                        
+                    if(count==2){                        
                         count2+=1;
                         if(count2==2){
                             count2=0;

@@ -32,6 +32,5 @@ public class Tehai {
 
     public void printTehai(){
         System.out.println(hai.keySet());
-    }
-    
+    }   
 }

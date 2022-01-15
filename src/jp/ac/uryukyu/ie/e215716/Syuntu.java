@@ -1,16 +1,12 @@
 package jp.ac.uryukyu.ie.e215716;
 import java.util.*;
 
-public class Syuntu implements Mentu {
-    private Map<String, Integer> hai;
-    private int countSyuntu =0;
+public class Syuntu extends Mentu {
+    private int countSyuntu;
 
-    public Map<String, Integer> getHai() {
-        return hai;
-    }
-
-    public Syuntu(){
-        hai = new HashMap<>();
+    public Syuntu(int countSyuntu){
+        super();
+        this.countSyuntu = 0;
     }
 
     @Override

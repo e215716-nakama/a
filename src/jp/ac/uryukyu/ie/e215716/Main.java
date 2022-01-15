@@ -10,34 +10,32 @@ public class Main{
         myTehai.printTehai();
         myTehai.tehaisuu2();
         
-        Syuntu syuntu = new Syuntu();
-        syuntu.getHai().put("i-wan", 2);
-        syuntu.getHai().put("ryan-wan", 1);
-        syuntu.getHai().put("san-wan", 3);
-        syuntu.getHai().put("an-wan", 4);
-        syuntu.getHai().put("n-wan", 5);
-        syuntu.getHai().put("-wan", 6);
-        System.out.println(syuntu.getHai());
+        Syuntu syuntu = new Syuntu(0);
+        syuntu.addHai("i-wan", 1);
+        syuntu.addHai("ryan-wan", 2);
+        syuntu.addHai("san-wan", 3);
+        syuntu.printHai();
         syuntu.countMentu(syuntu.getHai());
 
-        Kotu kotu = new Kotu();
-        kotu.getHai().put("i-wan", 1);
-        kotu.getHai().put("ryan-wan",1);
-        kotu.getHai().put("san-wan", 1);
-        kotu.getHai().put("an-wan", 1);
-        kotu.getHai().put("-wan", 1);
-        kotu.getHai().put("n-wan", 1);
-        System.out.println(kotu.getHai());
+        Kotu kotu = new Kotu(0,0,0);
+        kotu.addHai("i-wan", 1);
+        kotu.addHai("i--wan",1);
+        kotu.addHai("i---wan", 1);
+        kotu.printHai();
         kotu.countMentu(kotu.getHai());
 
-        Zyantou zyantou = new Zyantou();
-        zyantou.getHai().put("i-wan", 0);
-        zyantou.getHai().put("ryan-wan",0);
-        zyantou.getHai().put("san-wan", 0);
-        zyantou.getHai().put("an-wan", 2);
-        zyantou.getHai().put("-wan", 0);
-        zyantou.getHai().put("n-wan", 2);
-        System.out.println(zyantou.getHai());
+        Kantu kantu = new Kantu(0, 0, 0);
+        kantu.addHai("i-wan", 1);
+        kantu.addHai("i--wan", 1);
+        kantu.addHai("i---wan", 1);
+        kantu.addHai("i----wan", 1);
+        kantu.printHai();
+        kantu.countMentu(kantu.getHai());
+
+        Zyantou zyantou = new Zyantou(0,0,0);
+        zyantou.addHai("i-wan", 1);
+        zyantou.addHai("i--wan",1);
+        zyantou.printHai();
         zyantou.countMentu(zyantou.getHai());
     }
 }

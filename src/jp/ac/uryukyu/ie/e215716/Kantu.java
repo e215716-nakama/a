@@ -1,24 +1,19 @@
 package jp.ac.uryukyu.ie.e215716;
 import java.util.*;
-public class Kantu implements Mentu {
-    private Map<String, Integer> hai;
-    private int count =0;
-    private int count2 =0;
-    private int countKantu = 0;
+public class Kantu extends Mentu {
+    private int count;
+    private int count2;
+    private int countKantu;
 
-    public Map<String, Integer> getHai() {
-        return hai;
-    }
-
-    public Kantu(){
-        hai = new HashMap<>();
+    public Kantu(int count,int count2,int countKantu){
+        this.count =0;
+        this.count2 = 0;
+        this.countKantu = 0;
     }
 
     @Override
     public void countMentu(Map<String,Integer> hai){
         ArrayList<Integer> list = new ArrayList<>();
-        
-
         for(int i : hai.values()){
             list.add(i);
         }
